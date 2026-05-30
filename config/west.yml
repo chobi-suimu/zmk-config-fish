@@ -2,15 +2,14 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: joelspadin
-      url-base: https://github.com
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    # ▼ 自動計算を無効化するため、urlプロパティで直接GitHubのアドレスを指定します
     - name: zmk-locales
-      remote: joelspadin
+      url: https://github.com
       revision: main
   self:
     path: config
