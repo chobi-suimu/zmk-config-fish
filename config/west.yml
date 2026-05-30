@@ -2,17 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # ▼ バグを回避するため、専用の独立したリモートを設定します
-    - name: joelspadin-remote
-      url-base: https://github.com
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    # ▼ リモート名とプロジェクト名を明確に分けて指定します
-    - name: zmk-locales
-      remote: joelspadin-remote
-      revision: main
   self:
     path: config
