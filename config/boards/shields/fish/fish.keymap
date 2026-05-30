@@ -9,8 +9,19 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/locale/jp.h>
 
+// ▼ ここからJIS配列用のカスタムキー定義（直接埋め込み）
+#define JP_MINUS      MINUS          // -
+#define JP_YEN        INT3           // ￥
+#define JP_AT         LBKT           // @
+#define JP_LBKT       RBKT           // [
+#define JP_RBKT       BSLH           // ]
+#define JP_BSLH       INT1           // ＼
+#define JP_UNDER      LS(INT1)       // _ (Shift + ろ)
+#define JP_ZHTG       GRAVE          // 半角/全角
+#define JP_HEN        INT4           // 変換
+#define JP_MHEN       INT5           // 無変換
+// ▲ ここまでを追加
 
 // 特殊入力の挙動を調整できる
 
