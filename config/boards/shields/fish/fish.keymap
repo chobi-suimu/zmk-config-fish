@@ -99,18 +99,18 @@
 
         layer_math {
             bindings = <
-&kp LS(COMMA) &kp EQUAL &kp LS(DOT) &kp LS(EQUAL) &kp LS(N5) &kp N7 &kp N8 &kp N9
-&mt LCTRL LBKT &kp LS(SEMI) &mt LGUI MINUS &mt LALT A &mt LSHFT SLASH &kp LS(MINUS) &kp N0 &mt LSHFT N4 &mt LALT N5 &mt LGUI N6 &kp COMMA &mt LCTRL LS(N6)
-&kp SEMI &kp LS(INT1) &kp SQT &kp INT3 &kp N1 &kp N2 &kp N3 &kp DOT
+&kp LS(0x36) &kp 0x2E &kp LS(0x37) &kp LS(0x2F) &kp LS(0x22) &kp N7 &kp N8 &kp N9
+&mt LCTRL 0x2F &kp LS(0x33) &mt LGUI 0x2D &mt LALT A &mt LSHFT 0x38 &kp 0x27 &kp N0 &mt LSHFT N4 &mt LALT N5 &mt LGUI N6 &kp 0x36 &mt LCTRL LS(0x23)
+&kp 0x33 &kp LS(0x87) &kp 0x34 &kp 0x89 &kp N1 &kp N2 &kp N3 &kp 0x37
 &kp SPACE &lt 6 TAB &lt 6 DEL &kp BSPC
             >;
         };
 
         layer_navi {
             bindings = <
-&kp RBKT &kp LS(N2) &kp BSLH &kp LS(N1) &kp LANG1 &kp LG(TAB) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT))
-&mt LCTRL LS(N4) &kp LS(N3) &mt LGUI LS(N8) &mt LALT LS(N7) &mt LSHFT LS(N9) &kp LS(SLASH) &kp CAPS &kp LEFT &kp UP &kp RIGHT &kp DOWN &kp PSCRN
-&kp LS(INT3) &kp LS(RBKT) &kp LS(LBKT) &kp LS(BSLH) &kp HOME &kp PG_UP &kp PG_DN &kp END
+&kp 0x30 &kp 0x1F &kp 0x31 &kp LS(0x1E) &kp 0x90 &kp LG(TAB) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT))
+&mt LCTRL LS(0x21) &kp LS(0x20) &mt LGUI 0x25 &mt LALT 0x24 &mt LSHFT 0x26 &kp LS(0x38) &kp CAPS &kp LEFT &kp UP &kp RIGHT &kp DOWN &kp PSCRN
+&kp LS(0x89) &kp LS(0x30) &kp LS(0x2E) &kp LS(0x31) &kp HOME &kp PG_UP &kp PG_DN &kp END
 &lt 6 BSPC &kp DEL &kp TAB &lt 6 SPACE
             >;
         };
@@ -144,9 +144,9 @@
 
         layer_system {
             bindings = <
-&kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE &mmv MOVE_DOWN &kp C_AL_CALC &kp LG(TAB) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT))
-&kp LCTRL &kp INS &kp LGUI &kp LALT &kp LSHFT &mmv MOVE_UP &kp F10 &kp F4 &kp F5 &kp F6 &kp F12 &kp &kp
-&kp PAUSE_BREAK &mmv MOVE_LEFT &mmv MOVE_RIGHT &msc SCRL_UP &kp F1 &kp F2 &kp F3 &kp F11
+&kp 0x20E9 &kp 0x20EA &kp 0x20E2 &mkp RCLK &kp 0x192 &kp LG(TAB) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT))
+&kp LCTRL &kp 0x49 &kp LGUI &kp LALT &kp LSHFT &mkp LCLK &kp F10 &kp F4 &kp F5 &kp F6 &kp F12 &kp 0x65
+&kp 0x48 &mkp MCLK &mkp MB4 &mkp MB5 &kp F1 &kp F2 &kp F3 &kp F11
 &none &none &none &none
             >;
         };
