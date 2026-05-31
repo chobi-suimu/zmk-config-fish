@@ -1,4 +1,4 @@
-// キーマップを更新する方法は https://o24.works/fish/guide を参照
+/ キーマップを更新する方法は https://o24.works/fish/guide を参照
 // 視覚的に編集するには https://o24.works/fish/editor を参照
 
 
@@ -109,18 +109,18 @@
 
         layer_math {
             bindings = <
-                        &kp LT      &kp CARET   &kp GT      &kp TILDE           &kp PRCNT   &kp N7      &kp N8      &kp N9      
-&mt LCTRL AT &kp PLUS   &mt LGUI MINUS &mt LALT STAR &mt LSHFT FSLH &kp EQUAL   &kp N0      &mt RSHFT N4 &mt RALT N5 &mt RGUI N6 &kp COMMA  &mt RCTRL AMPS 
-            &kp SEMI    &kp UNDER   &kp COLON   &kp BSLH                                    &kp N1      &kp N2      &kp N3      &kp DOT     
+                        &kp LS(COMMA)      &kp EQUAL   &kp LS(DOT)      &kp LS(LBKT)           &kp LS(N5)   &kp N7      &kp N8      &kp N9      
+&mt LCTRL LBKT &kp LS(SEMI)   &mt LGUI MINUS &mt LALT LS(SQT) &mt LSHFT SLASH &kp LS(N0)   &kp N0      &mt RSHFT N4 &mt RALT N5 &mt RGUI N6 &kp COMMA  &mt RCTRL LS(N6) 
+            &kp SEMI    &kp LS(INT_RO)   &kp SQT   &kp INT_RO                                    &kp N1      &kp N2      &kp N3      &kp DOT     
                                                 &kp SPACE   &lt 6 TAB           &lt 6 DEL   &kp BSPC    
             >;
         };
 
         layer_navi {
             bindings = <
-                        &kp LBKT    &kp DQT     &kp RBKT    &kp EXCL            &kp LANG1   &kp LG(TAB) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) 
-&mt LCTRL DLLR &kp HASH &mt LGUI LPAR &mt LALT SQT &mt LSHFT RPAR &kp QMARK     &kp CAPS    &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT   &kp PSCRN   
-            &kp PIPE    &kp LBRC    &kp GRAVE   &kp RBRC                                    &kp HOME    &kp PG_UP   &kp PG_DN   &kp END     
+                        &kp RBKT    &kp LS(N2)     &kp BSLH    &kp LS(N1)            &kp LANG1   &kp LG(TAB) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) 
+&mt LCTRL LS(N4) &kp LS(N3) &mt LGUI LS(N8) &mt LALT LS(N7) &mt LSHFT LS(N9) &kp LS(SLASH)     &kp CAPS    &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT   &kp PSCRN   
+            &kp LS(INT_YEN)    &kp LS(RBKT)    &kp LS(EQUAL)   &kp LS(BSLH)                                    &kp HOME    &kp PG_UP   &kp PG_DN   &kp END     
                                                 &lt 6 BSPC  &kp DEL             &kp TAB     &lt 6 SPACE 
             >;
         };
