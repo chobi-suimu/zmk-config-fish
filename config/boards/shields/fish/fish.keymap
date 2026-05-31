@@ -64,6 +64,16 @@
         timeout-ms = <100>;
         require-prior-idle-ms = <150>;
 
+        combo_lang2 {
+            key-positions = <11 12>;
+            bindings = <&kp LANG2>;
+        };
+
+        combo_lang1 {
+            key-positions = <15 16>;
+            bindings = <&kp LANG1>;
+        };
+
         combo_reset_L {
             key-positions = <3 8 13>;
             bindings = <&bootloader>;
@@ -90,28 +100,28 @@
 
         layer_keymap {
             bindings = <
-&kp L &kp U &kp F &kp ESC &kp K &kp W &kp R &kp Y
-&mt LCTRL Q &kp E &mt LGUI I &mt LALT A &mt LSHFT O &kp RET &kp G &mt LSHFT T &mt LALT N &mt LGUI S &kp H &mt LCTRL P
-&kp Z &kp X &kp C &kp V &kp D &kp M &kp J &kp B
-&lt 1 BSPC &lt 2 DEL &lt 2 TAB &lt 1 SPACE
+                        &kp L       &kp U       &kp F       &kp ESC             &kp K       &kp W       &kp R       &kp Y       
+&mt LCTRL Q &kp E       &mt LGUI I  &mt LALT A  &mt LSHFT O &kp RET             &kp G       &mt RSHFT T &mt RALT N  &mt RGUI S  &kp H       &mt RCTRL P 
+            &kp Z       &kp X       &kp C       &kp V                                       &kp D       &kp M       &kp J       &kp B       
+                                                &lt 1 BSPC  &lt 2 DEL           &lt 2 TAB   &lt 1 SPACE 
             >;
         };
 
         layer_math {
             bindings = <
-&kp LS(0x36) &kp 0x2E &kp LS(0x37) &kp LS(0x2F) &kp LS(0x22) &kp N7 &kp N8 &kp N9
-&mt LCTRL 0x2F &kp LS(0x33) &mt LGUI 0x2D &mt LALT A &mt LSHFT 0x38 &kp 0x27 &kp N0 &mt LSHFT N4 &mt LALT N5 &mt LGUI N6 &kp 0x36 &mt LCTRL LS(0x23)
-&kp 0x33 &kp LS(0x87) &kp 0x34 &kp 0x89 &kp N1 &kp N2 &kp N3 &kp 0x37
-&kp SPACE &lt 6 TAB &lt 6 DEL &kp BSPC
+                        &kp LT      &kp CARET   &kp GT      &kp TILDE           &kp PRCNT   &kp N7      &kp N8      &kp N9      
+&mt LCTRL AT &kp PLUS   &mt LGUI MINUS &mt LALT STAR &mt LSHFT FSLH &kp EQUAL   &kp N0      &mt RSHFT N4 &mt RALT N5 &mt RGUI N6 &kp COMMA  &mt RCTRL AMPS 
+            &kp SEMI    &kp UNDER   &kp COLON   &kp BSLH                                    &kp N1      &kp N2      &kp N3      &kp DOT     
+                                                &kp SPACE   &lt 6 TAB           &lt 6 DEL   &kp BSPC    
             >;
         };
 
         layer_navi {
             bindings = <
-&kp 0x30 &kp 0x1F &kp 0x31 &kp LS(0x1E) &kp 0x90 &kp LG(TAB) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT))
-&mt LCTRL LS(0x21) &kp LS(0x20) &mt LGUI 0x25 &mt LALT 0x24 &mt LSHFT 0x26 &kp LS(0x38) &kp CAPS &kp LEFT &kp UP &kp RIGHT &kp DOWN &kp PSCRN
-&kp LS(0x89) &kp LS(0x30) &kp LS(0x2E) &kp LS(0x31) &kp HOME &kp PG_UP &kp PG_DN &kp END
-&lt 6 BSPC &kp DEL &kp TAB &lt 6 SPACE
+                        &kp LBKT    &kp DQT     &kp RBKT    &kp EXCL            &kp LANG1   &kp LG(TAB) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT)) 
+&mt LCTRL DLLR &kp HASH &mt LGUI LPAR &mt LALT SQT &mt LSHFT RPAR &kp QMARK     &kp CAPS    &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT   &kp PSCRN   
+            &kp PIPE    &kp LBRC    &kp GRAVE   &kp RBRC                                    &kp HOME    &kp PG_UP   &kp PG_DN   &kp END     
+                                                &lt 6 BSPC  &kp DEL             &kp TAB     &lt 6 SPACE 
             >;
         };
 
@@ -144,10 +154,10 @@
 
         layer_system {
             bindings = <
-&kp 0x20E9 &kp 0x20EA &kp 0x20E2 &mkp RCLK &kp 0x192 &kp LG(TAB) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT))
-&kp LCTRL &kp 0x49 &kp LGUI &kp LALT &kp LSHFT &mkp LCLK &kp F10 &kp F4 &kp F5 &kp F6 &kp F12 &kp 0x65
-&kp 0x48 &mkp MCLK &mkp MB4 &mkp MB5 &kp F1 &kp F2 &kp F3 &kp F11
-&none &none &none &none
+                        &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE &mkp MB2           &kp C_AL_CALC &kp F7      &kp F8      &kp F9      
+&kp LCTRL   &kp INS     &kp LGUI    &kp LALT    &kp LSHFT   &mkp MB1            &kp F10       &kp F4      &kp F5      &kp F6      &kp F12     &kp K_APP   
+            &kp PAUSE_BREAK &mkp MB3 &mkp MB4   &mkp MB5                                      &kp F1      &kp F2      &kp F3      &kp F11     
+                                                &none       &none               &none         &none       
             >;
         };
 
