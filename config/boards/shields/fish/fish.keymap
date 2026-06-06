@@ -127,7 +127,7 @@
 &kp LS(COMMA) &kp EQUAL &kp LS(DOT) &kp LS(EQUAL) &kp LS(N5) &kp N7 &kp N8 &kp N9
 &mt LGUI LBKT &mt LCTRL LS(SEMI) &mt LSHFT MINUS &mt LALT LS(SQT) &kp SLASH &kp LS(MINUS) &kp N0 &kp N4 &mt LALT N5 &mt LSHFT N6 &mt LCTRL COMMA &mt LGUI LS(N6)
 &kp SEMI &kp LS(INT_RO) &kp SQT &kp INT_RO &kp N1 &kp N2 &kp N3 &kp DOT
-&kp SPACE &lt 2 BSPC &lt 2 DEL &kp RET
+&kp SPACE &lt 6 BSPC &lt 6 DEL &kp RET
             >;
         };
 
@@ -136,7 +136,7 @@
 &kp RBKT &kp LS(N2) &kp BSLH &kp LS(N1) &kp LANG1 &kp LG(TAB) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT))
 &mt LGUI LS(N4) &mt LCTRL LS(N3) &mt LSHFT LS(N8) &mt LALT LS(N7) &kp LS(N9) &kp LS(SLASH) &kp CAPS &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp PSCRN
 &kp LS(INT_YEN) &kp LS(RBKT) &kp LS(LBKT) &kp LS(BSLH) &kp HOME &kp PG_UP &kp PG_DN &kp END
-&lt 1 SPACE &kp BSPC &kp DEL &lt 1 RET
+&lt 6 SPACE &kp BSPC &kp DEL &lt 6 RET
             >;
         };
 
