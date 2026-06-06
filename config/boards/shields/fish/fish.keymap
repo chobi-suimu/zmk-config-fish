@@ -75,12 +75,12 @@
         };
 
         combo_sys_reset_L {
-            key-positions = <8 10 11 12>;
+            key-positions = <8 9 10 11>;
             bindings = <&sys_reset>;
         };
 
         combo_sys_reset_R {
-            key-positions = <15 16 17 19>;
+            key-positions = <16 17 18 19>;
             bindings = <&sys_reset>;
         };
 
@@ -116,27 +116,27 @@
         layer_keymap {
             bindings = <
 &kp L &kp U &kp F &mt LC(LS(LALT)) ESC &kp K &kp W &kp R &kp Y
-&mt LCTRL Q &kp E &mt LGUI I &mt LALT A &mt LSHFT O &kp RET &kp G &mt LSHFT T &mt LALT N &mt LGUI S &kp H &mt LCTRL P
+&mt LGUI Q &mt LCTRL E &mt LSHFT I &mt LALT A &kp O &kp TAB &kp G &kp T &mt LALT N &mt LSHFT S &mt LCTRL H &mt LGUI P
 &kp Z &kp X &kp C &kp V &kp D &kp M &kp J &kp B
-&lt 1 BSPC &lt 2 DEL &lt 2 TAB &lt 1 SPACE
+&lt 1 SPACE &lt 2 BSPC &lt 2 DEL &lt 1 RET
             >;
         };
 
         layer_math {
             bindings = <
 &kp LS(COMMA) &kp EQUAL &kp LS(DOT) &kp LS(EQUAL) &kp LS(N5) &kp N7 &kp N8 &kp N9
-&mt LCTRL LBKT &kp LS(SEMI) &mt LGUI MINUS &mt LALT LS(SQT) &mt LSHFT SLASH &kp LS(MINUS) &kp N0 &mt LSHFT N4 &mt LALT N5 &mt LGUI N6 &kp COMMA &mt LCTRL LS(N6)
+&mt LGUI LBKT &mt LCTRL LS(SEMI) &mt LSHFT MINUS &mt LALT LS(SQT) &kp SLASH &kp LS(MINUS) &kp N0 &kp N4 &mt LALT N5 &mt LSHFT N6 &mt LCTRL COMMA &mt LGUI LS(N6)
 &kp SEMI &kp LS(INT_RO) &kp SQT &kp INT_RO &kp N1 &kp N2 &kp N3 &kp DOT
-&kp SPACE &lt 6 TAB &lt 6 DEL &kp BSPC
+&kp SPACE &lt 2 BSPC &lt 2 DEL &kp RET
             >;
         };
 
         layer_navi {
             bindings = <
 &kp RBKT &kp LS(N2) &kp BSLH &kp LS(N1) &kp LANG1 &kp LG(TAB) &kp LC(LG(LEFT)) &kp LC(LG(RIGHT))
-&mt LCTRL LS(N4) &kp LS(N3) &mt LGUI LS(N8) &mt LALT LS(N7) &mt LSHFT LS(N9) &kp LS(SLASH) &kp CAPS &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp PSCRN
+&mt LGUI LS(N4) &mt LCTRL LS(N3) &mt LSHFT LS(N8) &mt LALT LS(N7) &kp LS(N9) &kp LS(SLASH) &kp CAPS &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp PSCRN
 &kp LS(INT_YEN) &kp LS(RBKT) &kp LS(LBKT) &kp LS(BSLH) &kp HOME &kp PG_UP &kp PG_DN &kp END
-&lt 6 BSPC &kp DEL &kp TAB &lt 6 SPACE
+&lt 1 SPACE &kp BSPC &kp DEL &lt 1 RET
             >;
         };
 
@@ -170,7 +170,7 @@
         layer_system {
             bindings = <
 &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE &mkp MB2 &kp C_AL_CALC &kp F7 &kp F8 &kp F9
-&kp LCTRL &kp INS &kp LGUI &kp LALT &kp LSHFT &mkp MB1 &kp F10 &kp F4 &kp F5 &kp F6 &kp F12 &kp K_APP
+&kp LGUI &kp LCTRL &kp LSHFT &kp LALT &kp INS &mkp MB1 &kp F10 &kp F4 &kp F5 &kp F6 &kp F12 &kp K_APP
 &kp PAUSE_BREAK &mkp MB3 &mkp MB4 &mkp MB5 &kp F1 &kp F2 &kp F3 &kp F11 
 &none &none &none &none
             >;
